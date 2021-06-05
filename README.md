@@ -11,3 +11,5 @@
 - [flag](https://github.com/AidenPearce369/pwnable.kr/raw/main/flag/flag.pdf)
 
 - [passcode](https://github.com/AidenPearce369/pwnable.kr/raw/main/passcode/passcode.pdf)
+
+- [random](https://github.com/AidenPearce369/pwnable.kr/raw/main/random/random.pdf)
