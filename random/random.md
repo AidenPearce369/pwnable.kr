@@ -127,7 +127,7 @@ So this rand() produces same output because the seed in it is not initialized,if
 
 Here rand() is called with default seed (1),thus it produces the same output for random number
 
-To prevent this type of security failure by rand() for pseudo random number generation, us srand()
+To prevent this type of security failure by rand() for pseudo random number generation, use srand()
 
 ```
 
@@ -135,9 +135,9 @@ We know that the condition to pass the program is,
 
 ```if( (key ^ random) == 0xdeadbeef )```
 
-Now ```random``` gives ```1804289383```
+Now ```random``` gives ```1804289383```,
 
-```key``` is our input
+```key``` is our input,
 
 If ```random``` performs ```xor``` operation with ```key``` it should give ```0xdeadbeef``` as result,
 
@@ -152,9 +152,11 @@ So ```0x6b8b4567 ^ key == 0xdeadbeef```,
 
 Its time for mathematical calculation (Converting into binary format),
 
-0x6b8b4567 ---> 1101011100010110100010101100111
+```
+0x6b8b4567 = 1101011100010110100010101100111
 
-0xdeadbeef ---> 11011110101011011011111011101111
+0xdeadbeef = 11011110101011011011111011101111
+```
 
 To find the key just XOR these,
 
